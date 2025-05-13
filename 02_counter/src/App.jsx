@@ -8,11 +8,14 @@ function App() {
 
  const addValue=() =>{
   // counter=counter+1;
-  // setCounter(counter);
-  if(counter<20){
-     setCounter(counter+1);
-  
-  }
+ 
+    //  setCounter(counter+1);
+    //  setCounter(counter+1);//if these all statement will same react will understand it same work and only do once
+    //  setCounter(counter+1);
+  setCounter(prevCounter=> prevCounter+1);
+  setCounter(prevCounter=> prevCounter+1);
+  setCounter(prevCounter=> prevCounter+1);
+  setCounter(prevCounter=> prevCounter+1);
  
  }
  const removeValue=()=>{
